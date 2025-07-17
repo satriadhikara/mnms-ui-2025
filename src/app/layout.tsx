@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+// import { Plus_Jakarta_Sans } from "next/font/google";
+import LocalFont from "next/font/local";
 import "./globals.css";
 
-const jakartaSans = Plus_Jakarta_Sans({
+const jakartaSans = LocalFont({
+  src: "../fonts/PlusJakartaSans[wght].ttf",
   variable: "--font-jakarta-sans",
-  subsets: ["latin"],
+  display: "swap",
 });
+
+// const jakartaSans = Plus_Jakarta_Sans({
+//   variable: "--font-jakarta-sans",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Metallurgy and Materials’ Week",
