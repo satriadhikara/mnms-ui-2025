@@ -121,3 +121,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  .font-stylistic-alternates {
+    /* "ss01", "ss02", etc., are OpenType feature tags for Stylistic Sets */
+    font-feature-settings: "ss01" 1, "ss02" 1, "ss03" 1;
+  }
+}
