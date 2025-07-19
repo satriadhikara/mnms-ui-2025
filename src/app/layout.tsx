@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 // import { Plus_Jakarta_Sans } from "next/font/google";
 import LocalFont from "next/font/local";
 import "./globals.css";
-import { Footer } from "@/components/Footer";
+import { ConditionalFooter } from "@/components/ConditionalFooter";
 
 const jakartaSans = LocalFont({
   src: "../fonts/PlusJakartaSans[wght].ttf",
@@ -29,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${jakartaSans.variable} antialiased bg-black`}>
         {children}
-        <Footer />
+        <ConditionalFooter />
       </body>
     </html>
   );
