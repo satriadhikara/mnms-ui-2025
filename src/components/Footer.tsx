@@ -8,20 +8,20 @@ export const Footer = () => {
                     Contact Us
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 mt-3 sm:mt-4 md:mt-5 text-sm sm:text-base md:text-lg">
-                    <div className="font-semibold flex gap-2 items-center justify-center">
+                    <a href="https://www.instagram.com/mnms_ui?igsh=NnJwbm54MW5oNXhi" target="_blank" className="font-semibold flex gap-2 items-center justify-center">
                         <Image src="/icons/instagram.svg" alt="Instagram" width={16} height={16} className="sm:w-[18px] sm:h-[18px]" />
                         <p>Instagram</p>
-                    </div>
-                    <div className="font-semibold flex gap-2 items-center justify-center">
+                    </a>
+                    <a href="https://www.linkedin.com/company/the-20th-metallurgy-and-materials-week/" target="_blank" className="font-semibold flex gap-2 items-center justify-center">
                         <Image src="/icons/linkedin.svg" alt="Linkedin" width={16} height={16} className="sm:w-[18px] sm:h-[18px]" />
                         <p>Linkedin</p>
-                    </div>
-                    <div className="font-semibold flex gap-2 items-center justify-center">
+                    </a>
+                    <a href="https://www.tiktok.com/@mnms.ui?_t=ZS-8y9xl7hYUEi&_r=1" target="_blank" className="font-semibold flex gap-2 items-center justify-center">
                         <Image src="/icons/tiktok.svg" alt="Tiktok" width={16} height={16} className="sm:w-[18px] sm:h-[18px]" />
                         <p>Tiktok</p>
-                    </div>
+                    </a>
                 </div>
-                <p className="text-white text-xs sm:text-sm font-bold mt-3 sm:mt-4 md:mt-5 text-center">
+                <p className="text-white text-xs sm:text-sm font-bold mt-3 sm:mt-4 md:mt-5 mb-3 sm:mb-4 md:mb-5 text-center">
                     Copyright © 2025 MnMs&apos; Week
                 </p>
             </div>
