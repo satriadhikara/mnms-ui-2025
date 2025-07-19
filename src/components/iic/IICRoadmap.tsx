@@ -3,6 +3,7 @@ import Image from 'next/image';
 const IICRoadmap = () => (
     <Image
         src="/IIC-Roadmap.png"
+        unoptimized={true}
         alt="IIC Roadmap"
         width={1100}
         height={300}
