@@ -1,5 +1,12 @@
+import Navbar from "@/components/Navbar";
+
 const InnovativeInfographicCompetitionPage = () => {
-    return <div>InnovativeInfographicCompetitionPage</div>;
+    return (
+        <>
+            <Navbar />
+            <h1>Innovative Infographic Competition Page</h1>
+        </>
+    );
 };
 
 export default InnovativeInfographicCompetitionPage;
