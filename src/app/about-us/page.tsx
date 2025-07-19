@@ -53,7 +53,7 @@ const AboutUsPage = () => {
                     </div>
                     <div className="flex flex-col items-center justify-center w-full mt-24 z-20">
                         <Image
-                            src="/logo.png"
+                            src="/logo-au.png"
                             alt="Logo MnMs 2025"
                             width={190}
                             height={190}
