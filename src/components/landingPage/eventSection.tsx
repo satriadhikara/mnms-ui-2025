@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -92,7 +92,7 @@ const EventSection = () => {
       date: "September 2026",
       description: (
         <>
-          This year, the 20th Metallurgy and Materials' Week will include a
+          This year, the 20th Metallurgy and Materials&apos; Week will include a
           company visit to a metallurgy based company. As part of the event
           agenda
         </>
@@ -109,10 +109,10 @@ const EventSection = () => {
       date: "6th December 2025",
       description: (
         <>
-          <span className="font-bold">MnMs' Summit</span> is MnMs' Week's
+          <span className="font-bold">MnMs&apos; Summit</span> is MnMs&apos; Week&apos;s
           biggest event, consisting of{" "}
           <span className="font-bold">National Seminar</span> AND{" "}
-          <span className="font-bold">MnMs' Dialogue. </span>
+          <span className="font-bold">MnMs&apos; Dialogue. </span>
         </>
       ),
       image: "/MNMSsummit.png",
@@ -338,9 +338,8 @@ const EventSection = () => {
     const delay: number = index * 100;
     const direction: number = slideDirection === "next" ? 1 : -1;
 
-    return `opacity-0 scale-95 translate-x-[${
-      direction * 50
-    }px] translate-y-[25px]`;
+    return `opacity-0 scale-95 translate-x-[${direction * 50
+      }px] translate-y-[25px]`;
   };
 
   // Ellipse Animation
@@ -386,9 +385,8 @@ const EventSection = () => {
                 alt="Theme Background"
                 width={index === 0 ? 700 : 1000}
                 height={index === 0 ? 700 : 1000}
-                className={`${
-                  (pageData.bgProps as string[])[index]
-                } transition-all duration-700 ease-in-out`}
+                className={`${(pageData.bgProps as string[])[index]
+                  } transition-all duration-700 ease-in-out`}
               />
             ))
           ) : (
@@ -397,9 +395,8 @@ const EventSection = () => {
               alt="Theme Background"
               width={(pageData.background as string).includes("2") ? 500 : 200}
               height={(pageData.background as string).includes("2") ? 500 : 100}
-              className={`${
-                pageData.bgProps as string
-              } transition-all duration-700 ease-in-out`}
+              className={`${pageData.bgProps as string
+                } transition-all duration-700 ease-in-out`}
             />
           )}
         </div>
@@ -412,11 +409,10 @@ const EventSection = () => {
             alt="Star"
             width={star.width}
             height={star.height}
-            className={`${star.className} ${
-              star.responsive
-            } transition-all duration-700 ease-in-out ${getStarTransform(
-              index
-            )}`}
+            className={`${star.className} ${star.responsive
+              } transition-all duration-700 ease-in-out ${getStarTransform(
+                index
+              )}`}
             style={{
               transitionDelay: `${index * 150}ms`,
               zIndex: 5,
@@ -444,9 +440,8 @@ const EventSection = () => {
           {/* Title with individual animation */}
           <div className="text-center mb-3 sm:mb-6 md:mb-8 lg:mb-12 xl:mb-8">
             <h1
-              className={`text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold font-stylistic-alternates ${
-                pageData.titleColor
-              } mb-2 sm:mb-4 md:mb-3 lg:mb-4 xl:mb-2 transition-all duration-700 ease-in-out ${getTitleTransform()}`}
+              className={`text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl font-bold font-stylistic-alternates ${pageData.titleColor
+                } mb-2 sm:mb-4 md:mb-3 lg:mb-4 xl:mb-2 transition-all duration-700 ease-in-out ${getTitleTransform()}`}
             >
               {pageData.title}
             </h1>
@@ -634,9 +629,8 @@ const EventSection = () => {
         <button
           onClick={prevPage}
           disabled={isTransitioning}
-          className={`absolute left-1 sm:left-2 md:left-3 lg:left-4 xl:left-10 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 md:p-2 lg:p-4 xl:p-4 transition-all duration-300 hover:scale-110 ${
-            isTransitioning ? "opacity-50 cursor-not-allowed" : "opacity-100"
-          }`}
+          className={`absolute left-1 sm:left-2 md:left-3 lg:left-4 xl:left-10 top-1/2 transform -translate-y-1/2 p-2 sm:p-3 md:p-2 lg:p-4 xl:p-4 transition-all duration-300 hover:scale-110 ${isTransitioning ? "opacity-50 cursor-not-allowed" : "opacity-100"
+            }`}
           style={{ zIndex: 1000 }}
         >
           <svg
@@ -657,9 +651,8 @@ const EventSection = () => {
         <button
           onClick={nextPage}
           disabled={isTransitioning}
-          className={`absolute right-1 sm:right-2 md:right-3 lg:right-4 xl:right-10 top-1/2 transform -translate-y-1/2  p-2 sm:p-3 md:p-2 lg:p-4 xl:p-4 transition-all duration-300 hover:scale-110 ${
-            isTransitioning ? "opacity-50 cursor-not-allowed" : "opacity-100"
-          }`}
+          className={`absolute right-1 sm:right-2 md:right-3 lg:right-4 xl:right-10 top-1/2 transform -translate-y-1/2  p-2 sm:p-3 md:p-2 lg:p-4 xl:p-4 transition-all duration-300 hover:scale-110 ${isTransitioning ? "opacity-50 cursor-not-allowed" : "opacity-100"
+            }`}
           style={{ zIndex: 1000 }}
         >
           <svg
@@ -687,15 +680,13 @@ const EventSection = () => {
               key={index}
               onClick={() => goToPage(index)}
               disabled={isTransitioning}
-              className={`w-2 h-2 sm:w-3 sm:h-3 md:w-2 md:h-2 lg:w-3 lg:h-3 xl:w-2 xl:h-2 rounded-full transition-all duration-300 hover:scale-125 ${
-                index === currentPage
-                  ? "bg-white scale-125"
-                  : "bg-white/50 hover:bg-white/70"
-              } ${
-                isTransitioning
+              className={`w-2 h-2 sm:w-3 sm:h-3 md:w-2 md:h-2 lg:w-3 lg:h-3 xl:w-2 xl:h-2 rounded-full transition-all duration-300 hover:scale-125 ${index === currentPage
+                ? "bg-white scale-125"
+                : "bg-white/50 hover:bg-white/70"
+                } ${isTransitioning
                   ? "opacity-50 cursor-not-allowed"
                   : "opacity-100"
-              }`}
+                }`}
             />
           ))}
         </div>

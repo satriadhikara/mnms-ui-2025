@@ -4,7 +4,6 @@ import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
-import { de } from "zod/locales";
 
 const buttonClass =
   "flex items-center px-5 py-1 rounded-full border-[1.549px] border-[rgba(253,255,245,0)] " +

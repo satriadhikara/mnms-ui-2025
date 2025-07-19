@@ -17,7 +17,6 @@ import {
     CarouselNext,
 } from "@/components/ui/carousel";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { link } from 'fs';
 import Navbar from '@/components/Navbar';
 
 const AboutUsPage = () => {
