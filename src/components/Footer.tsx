@@ -22,7 +22,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <p className="text-white text-xs sm:text-sm font-bold mt-3 sm:mt-4 md:mt-5 text-center">
-                    Copyright © 2025 MnMs' Week
+                    Copyright © 2025 MnMs&apos; Week
                 </p>
             </div>
         </div>
