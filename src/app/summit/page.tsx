@@ -1,6 +1,7 @@
 import HeroSection from "@/components/mnmsSummit/heroSection";
 import ThemeSection from "@/components/mnmsSummit/themeSection";
 import AcaraSection from "@/components/mnmsSummit/acaraSection";
+import Contact from "@/components/about-us/Contact";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 
@@ -33,6 +34,7 @@ const SummitPage = () => {
         <HeroSection />
         <ThemeSection />
         <AcaraSection />
+        <Contact />
       </div>
     </>
   );

@@ -3,8 +3,11 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 const HeroSection = () => {
+  const router = useRouter();
+
   return (
     <div className="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background pattern */}
@@ -97,7 +100,7 @@ const HeroSection = () => {
           >
             <div className="flex justify-center lg:justify-start">
               <motion.button 
-                className="relative bg-transparent text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-xl lg:text-xl font-extrabold font-sans overflow-hidden group"
+                className="relative cursor-pointer bg-transparent text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-xl lg:text-xl font-extrabold font-sans overflow-hidden group"
                 whileHover={{ 
                   scale: 1.1,
                   rotate: [0, -2, 2, -2, 0],
@@ -105,6 +108,7 @@ const HeroSection = () => {
                 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ duration: 0.3 }}
+                onClick={() => router.push('/summit/form')}
               >
                 {/* Gradient border effect */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white to-transparent p-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300">

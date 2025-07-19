@@ -2,6 +2,8 @@ import HeroSection from "@/components/mnmsCSC/heroSection";
 import ThemeSection from "@/components/mnmsCSC/themeSection";
 import HighlightSection from "@/components/mnmsCSC/highlightsSection";
 import RoadMapSection from "@/components/mnmsCSC/roadmapSection";
+import Contact from "@/components/about-us/Contact";
+
 import Navbar from "@/components/Navbar";
 
 const CaseStudyCompetitionPage = () => {
@@ -12,6 +14,7 @@ const CaseStudyCompetitionPage = () => {
       <ThemeSection />
       <HighlightSection />
       <RoadMapSection />
+      <Contact />
     </div>
   );
 };
