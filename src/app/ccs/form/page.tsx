@@ -93,7 +93,7 @@ const CCSFormPage = () => {
     return (<>
         <div className="min-h-screen absolute top-0 left-0 w-full">
             <div className="bg-black h-full w-full absolute top-0 left-0 -z-10" />
-            <Image src="/images/ccs/glass-top.png" alt="Summit Top" width={1920} height={1080} className="absolute top-0 left-0 w-full -z-10" />
+            <Image src="/images/ccs/glass-top.png" alt="Decorative background for the CCS form page" width={1920} height={1080} className="absolute top-0 left-0 w-full -z-10" />
             <div className="flex flex-col justify-center z-10 relative mt-12 sm:mt-16 md:mt-24 mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6 md:px-8">
                 <div className="flex justify-center">
                     <div className="max-w-4xl w-full">
