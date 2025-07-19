@@ -26,11 +26,11 @@ export const CustomFormField = ({
         render={({ field }) => (
             <FormItem>
                 <div className="gap-0">
-                    <FormLabel className="text-[#F9F9F9] text-2xl gap-0">
+                    <FormLabel className="text-[#F9F9F9] text-lg sm:text-xl md:text-2xl gap-0">
                         {label}{required && <span className="text-[#FF0000]">*</span>}
                     </FormLabel>
                     {example && (
-                        <FormLabel className="text-[#DFE00D] text-[11px] font-bold">
+                        <FormLabel className="text-[#DFE00D] text-xs sm:text-sm font-bold block mt-1">
                             {example}
                         </FormLabel>
                     )}
@@ -40,10 +40,10 @@ export const CustomFormField = ({
                         type={type}
                         placeholder={placeholder}
                         {...field}
-                        className="!text-xl text-[#F9F9F9] rounded-full px-[22px] py-3 h-auto backdrop-blur-sm"
+                        className="text-base sm:text-lg md:text-xl text-[#F9F9F9] rounded-full px-4 sm:px-5 md:px-[22px] py-2 sm:py-3 h-auto backdrop-blur-sm"
                     />
                 </FormControl>
-                <FormMessage />
+                <FormMessage className="text-sm" />
             </FormItem>
         )}
     />
