@@ -1,5 +1,12 @@
+import Navbar from "@/components/Navbar";
+
 const SummitPage = () => {
-    return <div>SummitPage</div>;
+    return (
+        <>
+            <Navbar />
+            <h1>Summit Page</h1>
+        </>
+    );
 };
 
 export default SummitPage;
