@@ -2,6 +2,7 @@ import HeroSection from "@/components/landingPage/heroSection";
 import ThemeSection from "@/components/landingPage/themeSection";
 import EventSection from "@/components/landingPage/eventSection";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
 
 const LandingPage = () => {
   return (
