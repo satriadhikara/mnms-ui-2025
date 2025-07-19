@@ -41,8 +41,8 @@ export const REGISTRATION_CONFIGS = {
         headers: ['Timestamp', 'Full Name', 'University', 'Email', 'Phone Number', 'Line ID', 'Student Card'],
         range: 'A:G'
     },
-    ccs: {
-        sheetName: 'CCS Registrations',
+    csc: {
+        sheetName: 'CSC Registrations',
         headers: ['Timestamp', 'Team Name', 'Team Leader Name', 'Team Member 1', 'Team Member 2', 'Team Member 3', 'University', 'Major', 'Email', 'Phone Number', 'Team Personal Data File', 'Proof of Payment'],
         range: 'A:L'
     },

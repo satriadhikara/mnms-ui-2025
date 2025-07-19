@@ -21,7 +21,7 @@ function validateRequiredFields(fields: {
 
 export async function POST(request: NextRequest) {
     try {
-        console.log('=== Starting CCS Registration API ===');
+        console.log('=== Starting CSC Registration API ===');
 
         // Validate environment variables first
         validateEnvVars();
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
         console.log('Prepared data for sheets:', values);
 
         // Append to Google Sheets
-        await appendToSheet(values, REGISTRATION_CONFIGS.ccs);
+        await appendToSheet(values, REGISTRATION_CONFIGS.csc);
 
         console.log('=== Registration completed successfully ===');
 

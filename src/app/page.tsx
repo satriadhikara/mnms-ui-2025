@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar";
 const LandingPage = () => {
   return (
     <div className="relative">
+      <Navbar />
       <Image
         src="/Ellipse.png"
         alt="Hero Section Background"

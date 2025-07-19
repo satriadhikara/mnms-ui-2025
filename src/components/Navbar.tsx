@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
               Innovative Infographic Competition
             </Link>
             <Link
-              href="/ccs"
+              href="/csc"
               className={dropdownItemClass}
               onClick={() => setDropdownOpen(false)}
             >

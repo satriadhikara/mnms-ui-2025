@@ -26,7 +26,7 @@ const formSchema = z.object({
 })
 
 
-const CCSFormPage = () => {
+const CSCFormPage = () => {
     const [isSubmitting, setIsSubmitting] = useState(false)
 
     const form = useForm<z.infer<typeof formSchema>>({
@@ -63,7 +63,7 @@ const CCSFormPage = () => {
             formData.append('teamPersonalDataFile', values.teamPersonalDataFile)
             formData.append('scannedProofOfPayment', values.scannedProofOfPayment)
 
-            const response = await fetch('/api/ccs/register', {
+            const response = await fetch('/api/csc/register', {
                 method: 'POST',
                 body: formData,
             })
@@ -230,4 +230,4 @@ const CCSFormPage = () => {
     </>);
 };
 
-export default CCSFormPage;
+export default CSCFormPage;
