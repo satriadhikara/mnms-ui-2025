@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Form } from "@/components/ui/form"
 import { CustomFormField } from "@/components/forms/CustomFormField"
 import { Footer } from "@/components/Footer"
+import { toast } from "sonner"
 
 const formSchema = z.object({
     teamName: z.string().min(2).max(50),
@@ -27,8 +28,6 @@ const formSchema = z.object({
 
 const CCSFormPage = () => {
     const [isSubmitting, setIsSubmitting] = useState(false)
-    const [submitMessage, setSubmitMessage] = useState("")
-    const [isError, setIsError] = useState(false)
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
@@ -49,8 +48,6 @@ const CCSFormPage = () => {
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
         setIsSubmitting(true)
-        setSubmitMessage("")
-        setIsError(false)
 
         try {
             const formData = new FormData()
@@ -74,17 +71,14 @@ const CCSFormPage = () => {
             const result = await response.json()
 
             if (response.ok) {
-                setSubmitMessage("Registration submitted successfully! Thank you for registering for MnMs' Case Study Competition.")
-                setIsError(false)
+                toast.success("Registration submitted successfully! Thank you for registering for MnMs' Case Study Competition.")
                 form.reset()
             } else {
-                setSubmitMessage(result.error || "Failed to submit registration. Please try again.")
-                setIsError(true)
+                toast.error(result.error || "Failed to submit registration. Please try again.")
             }
         } catch (error) {
             console.error('Error submitting form:', error)
-            setSubmitMessage("An error occurred while submitting your registration. Please try again.")
-            setIsError(true)
+            toast.error("An error occurred while submitting your registration. Please try again.")
         } finally {
             setIsSubmitting(false)
         }
@@ -110,12 +104,7 @@ const CCSFormPage = () => {
                             </p>
                         </div>
 
-                        {/* Success/Error Message */}
-                        {submitMessage && (
-                            <div className={`mb-4 sm:mb-6 p-3 sm:p-4 rounded-lg text-sm sm:text-base ${isError ? 'bg-red-900/20 border border-red-500/50 text-red-200' : 'bg-green-900/20 border border-green-500/50 text-green-200'}`}>
-                                {submitMessage}
-                            </div>
-                        )}
+
 
                         <Form {...form}>
                             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4 sm:space-y-5">
