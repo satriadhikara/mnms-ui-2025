@@ -43,7 +43,7 @@ export async function POST(request: NextRequest) {
         });
 
         // Validate required fields
-        if (!teamName || !teamLeaderName || !teamMember1Name || !teamMember2Name || !teamMember3Name || !university || !major || !email || !phoneNumber || !teamPersonalDataFile || !abstractTimeFile || !teamWorkOriginalitySheetFile || !scannedProofOfPayment) {
+        if (!validateRequiredFields({ teamName, teamLeaderName, teamMember1Name, teamMember2Name, teamMember3Name, university, major, email, phoneNumber, teamPersonalDataFile, abstractTimeFile, teamWorkOriginalitySheetFile, scannedProofOfPayment })) {
             console.log('Validation failed: missing required fields');
             return NextResponse.json(
                 { error: 'All fields are required' },
