@@ -1,6 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { validateEnvVars, appendToSheet, createTimestamp, REGISTRATION_CONFIGS } from '@/lib/google-sheets';
 
+// Validation function for required fields
+function validateRequiredFields(fields: {
+    teamName: string;
+    teamLeaderName: string;
+    teamMember1Name: string;
+    teamMember2Name: string;
+    teamMember3Name: string;
+    university: string;
+    major: string;
+    email: string;
+    phoneNumber: string;
+    teamPersonalDataFile: string;
+    scannedProofOfPayment: string;
+}): boolean {
+    const requiredFields = Object.values(fields);
+    return requiredFields.every(field => field && field.toString().trim() !== '');
+}
+
 export async function POST(request: NextRequest) {
     try {
         console.log('=== Starting CCS Registration API ===');
