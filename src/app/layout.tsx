@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${jakartaSans.variable} antialiased bg-black`}>
         {children}
         <ConditionalFooter />
-        <Toaster />
+        <Toaster richColors />
       </body>
     </html>
   );
