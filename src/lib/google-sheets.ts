@@ -45,6 +45,11 @@ export const REGISTRATION_CONFIGS = {
         sheetName: 'CCS Registrations',
         headers: ['Timestamp', 'Team Name', 'Team Leader Name', 'Team Member 1', 'Team Member 2', 'Team Member 3', 'University', 'Major', 'Email', 'Phone Number', 'Team Personal Data File', 'Proof of Payment'],
         range: 'A:L'
+    },
+    iic: {
+        sheetName: 'IIC Registrations',
+        headers: ['Timestamp', 'Team Name', 'Team Leader Name', 'Team Member 1', 'Team Member 2', 'Team Member 3', 'University', 'Major', 'Email', 'Phone Number', 'Team Personal Data File', 'Abstract Time File', 'Team Work Originality Sheet', 'Proof of Payment'],
+        range: 'A:N'
     }
 } as const;
 
