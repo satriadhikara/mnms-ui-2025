@@ -106,8 +106,12 @@ export async function appendToSheet(values: any[], config: RegistrationConfig): 
             });
             console.log('Headers added successfully');
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        } catch (error: any) {
-            console.log('Sheet probably already exists:', error.message);
+        } catch (error: unknown) {
+            if (error instanceof Error) {
+                console.log('Sheet probably already exists:', error.message);
+            } else {
+                console.log('Sheet probably already exists. Unknown error:', error);
+            }
         }
 
         // Append the data
