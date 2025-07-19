@@ -262,6 +262,7 @@ const SummitFormPage = () => {
                 </div >
             </motion.div >
             <Footer />
+            <Image src="/images/summit/glass-bot.png" alt="Summit Bottom" width={1920} height={1080} className="absolute bottom-0 left-0 w-full -z-10 hidden sm:block" />
         </motion.div>
     </>)
 }

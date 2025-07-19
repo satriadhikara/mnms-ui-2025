@@ -23,7 +23,7 @@ const AnimatedButton: React.FC<AnimatedButtonProps> = ({
       type={type}
       onClick={onClick}
       disabled={disabled}
-      className={`relative bg-transparent text-white px-8 sm:px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-base md:text-lg font-semibold overflow-hidden group ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`}
+      className={`relative bg-transparent cursor-pointer text-white px-8 sm:px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-base md:text-lg font-semibold overflow-hidden group ${disabled ? 'opacity-50 cursor-not-allowed' : ''} ${className}`}
       whileHover={disabled ? {} : {
         scale: 1.1,
         rotate: [0, -2, 2, -2, 0],
