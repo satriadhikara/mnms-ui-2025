@@ -15,7 +15,7 @@ const SummitPage = () => {
           alt="Icon Star"
           width={200}
           height={200}
-          className="absolute top-122 left-0 lg:left-10 z-50 "
+          className="absolute top-122 left-0 lg:left-10 z-5 "
         />
         <Image
           src="/CSCStar15.png"

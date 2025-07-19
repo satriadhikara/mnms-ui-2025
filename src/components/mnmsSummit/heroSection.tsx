@@ -111,7 +111,7 @@ const HeroSection = () => {
                 onClick={() => router.push('/summit/form')}
               >
                 {/* Gradient border effect */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white to-transparent p-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white to-transparent p-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10">
                   <div className="w-full h-full rounded-full bg-black/80"></div>
                 </div>
 
