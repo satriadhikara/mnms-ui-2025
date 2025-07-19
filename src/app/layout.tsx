@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import LocalFont from "next/font/local";
 import "./globals.css";
 import { ConditionalFooter } from "@/components/ConditionalFooter";
+import { Toaster } from "@/components/ui/sonner"
 
 const jakartaSans = LocalFont({
   src: "../fonts/PlusJakartaSans[wght].ttf",
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${jakartaSans.variable} antialiased bg-black`}>
         {children}
         <ConditionalFooter />
+        <Toaster />
       </body>
     </html>
   );
