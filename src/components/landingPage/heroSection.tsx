@@ -3,8 +3,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 const HeroSection = () => {
+  const router = useRouter();
   return (
     <div className="bg-black bg-auto bg-center h-[100vh] flex items-center justify-center relative overflow-hidden">
       <Image
@@ -73,7 +75,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           >
             <motion.button 
-              className="relative bg-transparent text-white px-8 sm:px-10 md:px-12 py-3 md:py-4 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-base md:text-lg font-semibold overflow-hidden group"
+              className="relative bg-transparent text-white px-8 sm:px-10 md:px-12 py-3 md:py-4 rounded-full cursor-pointer hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-base md:text-lg font-semibold overflow-hidden group"
               whileHover={{ 
                 scale: 1.1,
                 rotate: [0, -2, 2, -2, 0],
@@ -81,6 +83,7 @@ const HeroSection = () => {
               }}
               whileTap={{ scale: 0.95 }}
               transition={{ duration: 0.3 }}
+              onClick={() => router.push('/about-us')}
             >
               {/* Gradient border effect */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white to-transparent p-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300">
