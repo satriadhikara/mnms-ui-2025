@@ -213,7 +213,7 @@ const CSCFormPage = () => {
                                     <Button
                                         type="submit"
                                         disabled={isSubmitting}
-                                        className="backdrop-blur-sm text-white font-bold text-lg sm:text-xl py-3 sm:py-4 px-6 sm:px-8 rounded-full bg-white/5 border-2 border-white/30 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/20 hover:border-white/50 mt-6 sm:mt-8 disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto"
+                                        className="backdrop-blur-sm cursor-pointer text-white font-bold text-lg sm:text-xl py-3 sm:py-4 px-6 sm:px-8 rounded-full bg-white/5 border-2 border-white/30 shadow-lg hover:shadow-xl transition-all duration-300 hover:bg-white/20 hover:border-white/50 mt-6 sm:mt-8 disabled:opacity-50 disabled:cursor-not-allowed w-full sm:w-auto"
                                     >
                                         {isSubmitting ? 'Submitting...' : 'Submit'}
                                     </Button>

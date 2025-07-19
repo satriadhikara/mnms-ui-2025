@@ -129,7 +129,7 @@ const RoadmapSection = () => {
           >
             <div className="w-full max-w-[2200px]">
               <Image
-                src="/CSCRoadmap.svg"
+                src="/cscRoadmap.svg"
                 alt="Competition Roadmap"
                 width={2200}
                 height={1800}
