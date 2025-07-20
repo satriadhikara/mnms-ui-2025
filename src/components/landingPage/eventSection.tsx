@@ -32,16 +32,6 @@ const EventSection = () => {
       buttonText: "Learn More",
       buttonLink: "/competitions",
     },
-    {
-      type: "events",
-      title: "MnMs' Events",
-      date: "6th December 2025",
-      description:
-        "A national-level competition for undergraduate (S1) or diploma (D3/D4) students, designed to hone their skills in solving and providing innovative solutions to real-world problems.",
-      image: "/MNMSevent.png",
-      buttonText: "Learn More",
-      buttonLink: "/events",
-    },
   ];
 
   const events2 = [
