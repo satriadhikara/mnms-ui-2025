@@ -61,7 +61,7 @@ const EventSection = () => {
       buttonText: "Learn More",
       buttonText2: "Register",
       buttonLink: "/csc",
-      buttonLink2: "/csc/register",
+      buttonLink2: "/csc/form",
     },
     {
       type: "events",
@@ -81,7 +81,7 @@ const EventSection = () => {
       buttonText: "Learn More",
       buttonText2: "Register",
       buttonLink: "/iic",
-      buttonLink2: "/iic/register",
+      buttonLink2: "/iic/form",
     },
   ];
 
@@ -101,7 +101,7 @@ const EventSection = () => {
       buttonText: "Learn More",
       buttonText2: "Register",
       buttonLink: "/company-visit",
-      buttonLink2: "/company-visit/register",
+      buttonLink2: "/company-visit/form",
     },
     {
       type: "SUMMIT",
@@ -119,7 +119,7 @@ const EventSection = () => {
       buttonText: "Learn More",
       buttonText2: "Register",
       buttonLink: "/summit",
-      buttonLink2: "/summit/register",
+      buttonLink2: "/summit/form",
     },
   ];
 
