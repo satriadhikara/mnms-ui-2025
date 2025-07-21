@@ -30,7 +30,7 @@ const EventSection = () => {
         "A national-level competition for undergraduate (S1) or diploma (D3/D4) students, designed to hone their skills in solving and providing innovative solutions to real-world problems.",
       image: "/MNMScompe.png",
       buttonText: "Learn More",
-      buttonLink: "/competitions",
+      buttonLink: "/coming-soon",
     },
   ];
 
@@ -79,7 +79,7 @@ const EventSection = () => {
     {
       type: "Company Visit",
       title: "Company Visit",
-      date: "September 2026",
+      date: "September 2025",
       description: (
         <>
           This year, the 20th Metallurgy and Materials&apos; Week will include a
@@ -90,8 +90,8 @@ const EventSection = () => {
       image: "/MNMScv.png",
       buttonText: "Learn More",
       buttonText2: "Register",
-      buttonLink: "/company-visit",
-      buttonLink2: "/company-visit/form",
+      buttonLink: "/coming-soon",
+      buttonLink2: "/coming-soon",
     },
     {
       type: "SUMMIT",
@@ -108,8 +108,8 @@ const EventSection = () => {
       image: "/MNMSsummit.png",
       buttonText: "Learn More",
       buttonText2: "Register",
-      buttonLink: "/summit",
-      buttonLink2: "/summit/form",
+      buttonLink: "/coming-soon",
+      buttonLink2: "/coming-soon",
     },
   ];
 
