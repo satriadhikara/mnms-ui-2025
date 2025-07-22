@@ -129,7 +129,7 @@ const HeroSection = () => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.3 }}
-                                href="https://drive.google.com/file/d/1hs6rH1OC8nFkXAaxeWa8AOxYc30vBrGw/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1XYVcRk36mtXj0JlLFPgE9k5p5lngFZbh/view?usp=drivesdk"
                                 target="_blank"
                             >
                                 {/* Gradient border effect */}
@@ -182,7 +182,7 @@ const HeroSection = () => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.3 }}
-                                href="https://drive.google.com/drive/folders/1EBsmNkaNNoVsFWv8gdUxFqFGdCfM5TfX?usp=sharing"
+                                href="https://drive.google.com/drive/folders/1EBsmNkaNNoVsFWv8gdUxFqFGdCfM5TfX"
                                 target="_blank"
                             >
                                 {/* Gradient border effect */}
