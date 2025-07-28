@@ -111,10 +111,18 @@ const HeroSection = () => {
                   transition: { duration: 0.3 }
                 }}
                 whileTap={{ scale: 0.95 }}
+                
               >
-                <Button className="cursor-pointer z-10 w-[150px] md:w-[184px] h-[40px] md:h-[44px] rounded-full border border-[rgba(253,255,245,0)] bg-gradient-to-r from-[rgba(253,255,245,0)] via-[rgba(253,255,245,0.1)] to-[rgba(253,255,245,0)] shadow-[0px_4.474px_16.778px_0px_rgba(0,0,0,0.35)] backdrop-blur-[36.560386657714844px] text-[#FBFAF7] text-[18px]/[24px] md:text-[24px]/[31.104px] font-[800] mr-0 md:mr-[20px] hover:bg-white hover:text-black transition-all duration-300">
-                  Guidebook
-                </Button>
+                <a
+                  href="https://drive.google.com/drive/folders/1eCx1RRROliIMV0iFl5HPZFW_f6mt9inj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-fit"
+                >
+                  <Button className="cursor-pointer z-10 w-[150px] md:w-[184px] h-[40px] md:h-[44px] rounded-full border border-[rgba(253,255,245,0)] bg-gradient-to-r from-[rgba(253,255,245,0)] via-[rgba(253,255,245,0.1)] to-[rgba(253,255,245,0)] shadow-[0px_4.474px_16.778px_0px_rgba(0,0,0,0.35)] backdrop-blur-[36.560386657714844px] text-[#FBFAF7] text-[18px]/[24px] md:text-[24px]/[31.104px] font-[800] mr-0 md:mr-[20px] hover:bg-white hover:text-black transition-all duration-300">
+                    Guidebook
+                  </Button>
+                </a>
               </motion.div>
 
               <Link href="/iic/form" passHref>
