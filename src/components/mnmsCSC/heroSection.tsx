@@ -174,7 +174,7 @@ const HeroSection = () => {
                         </div>
                         <div className="flex justify-center lg:justify-start">
                             <motion.a
-                                className="relative cursor-pointer bg-transparent text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-xl lg:text-xl font-extrabold font-sans overflow-hidden group"
+                                className="relative cursor-pointer bg-transparent text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-lg font-extrabold font-sans overflow-hidden group"
                                 whileHover={{
                                     scale: 1.1,
                                     rotate: [0, 2, -2, 2, 0],
@@ -182,7 +182,7 @@ const HeroSection = () => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.3 }}
-                                href="https://drive.google.com/drive/folders/1EBsmNkaNNoVsFWv8gdUxFqFGdCfM5TfX"
+                                href="https://drive.google.com/drive/folders/1EBsmNkaNNoVsFWv8gdUxFqFGdCfM5TfX?usp=sharing"
                                 target="_blank"
                             >
                                 {/* Gradient border effect */}
