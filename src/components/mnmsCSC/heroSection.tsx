@@ -129,7 +129,7 @@ const HeroSection = () => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.3 }}
-                                href="https://drive.google.com/file/d/1XYVcRk36mtXj0JlLFPgE9k5p5lngFZbh/view?usp=drivesdk"
+                                href="https://drive.google.com/file/d/1kGtzTqpqqkqS48CoQhB65cFYTX-KkBWc/view?usp=drivesdk"
                                 target="_blank"
                             >
                                 {/* Gradient border effect */}
