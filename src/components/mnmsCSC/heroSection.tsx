@@ -146,35 +146,10 @@ const HeroSection = () => {
                                 <span className="relative z-10 transition-colors duration-300">Guidebook</span>
                             </motion.a>
                         </div>
-                        <div className="flex justify-center lg:justify-start">
-                            <motion.button
-                                className="relative cursor-pointer bg-transparent text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-xl lg:text-xl font-extrabold font-sans overflow-hidden group"
-                                whileHover={{
-                                    scale: 1.1,
-                                    rotate: [0, 2, -2, 2, 0],
-                                    boxShadow: "0px 10px 30px rgba(255, 255, 255, 0.3)"
-                                }}
-                                whileTap={{ scale: 0.95 }}
-                                transition={{ duration: 0.3 }}
-                                onClick={() => router.push('/csc/form')}
-                            >
-                                {/* Gradient border effect */}
-                                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white to-transparent p-[2px] opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                                    <div className="w-full h-full rounded-full bg-black/80"></div>
-                                </div>
-
-                                {/* Animated background on hover */}
-                                <div className="absolute inset-0 rounded-full bg-white scale-0 group-hover:scale-100 transition-transform duration-500 ease-out"></div>
-
-                                {/* Ripple effect */}
-                                <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
-
-                                <span className="relative z-10 transition-colors duration-300">Registration</span>
-                            </motion.button>
-                        </div>
+                    
                         <div className="flex justify-center lg:justify-start">
                             <motion.a
-                                className="relative cursor-pointer bg-transparent text-white px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-lg font-extrabold font-sans overflow-hidden group"
+                                className="relative cursor-pointer bg-transparent text-white px-3 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-500 ease-in-out w-fit text-lg font-extrabold font-sans overflow-hidden group"
                                 whileHover={{
                                     scale: 1.1,
                                     rotate: [0, 2, -2, 2, 0],
@@ -182,7 +157,7 @@ const HeroSection = () => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.3 }}
-                                href="https://drive.google.com/drive/folders/1EBsmNkaNNoVsFWv8gdUxFqFGdCfM5TfX?usp=sharing"
+                                href="https://bit.ly/PreliminaryRound20thCSCMnMsWeek"
                                 target="_blank"
                             >
                                 {/* Gradient border effect */}
@@ -196,7 +171,7 @@ const HeroSection = () => {
                                 {/* Ripple effect */}
                                 <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
 
-                                <span className="relative z-10 transition-colors duration-300">Participant Kit</span>
+                                <span className="relative z-10 transition-colors duration-300">Preliminary Round Paper Submission</span>
                             </motion.a>
                         </div>
                     </motion.div>
