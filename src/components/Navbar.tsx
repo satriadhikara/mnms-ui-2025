@@ -180,6 +180,14 @@ const Navbar: React.FC = () => {
           >
             About Us
           </Link>
+
+          <Link
+            href="/sponsors"
+            className={mobileButtonClass}
+            onClick={closeMobileMenu}
+          >
+            Our Sponsors
+          </Link>
           
           <Link
             href="/summit"
