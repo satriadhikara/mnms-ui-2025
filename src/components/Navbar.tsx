@@ -96,6 +96,11 @@ const Navbar: React.FC = () => {
             Our Sponsors
           </Link>
         </li>
+        <li className="flex items-center">
+          <Link href="/company-visit" className={buttonClass}>
+            Company Visit
+          </Link>
+        </li>
         <li ref={dropdownRef} className="relative flex items-center">
           <button
             type="button"
@@ -195,6 +200,14 @@ const Navbar: React.FC = () => {
             onClick={closeMobileMenu}
           >
             Event
+          </Link>
+
+          <Link
+            href="/company-visit"
+            className={mobileButtonClass}
+            onClick={closeMobileMenu}
+          >
+            Company Visit
           </Link>
 
           {/* Mobile Competition Dropdown */}
