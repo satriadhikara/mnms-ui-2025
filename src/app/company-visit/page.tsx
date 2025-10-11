@@ -65,10 +65,23 @@ const CompanyVisitPage = () => {
                                 animate={{ opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut', delay: 0.45 } }}
                                 className="flex flex-col sm:flex-row justify-between items-start sm:items-start gap-6 sm:gap-10"
                             >
-                                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                                    <Button className="cursor-pointer z-20 w-[180px] sm:w-[200px] h-[44px] rounded-full border border-[rgba(253,255,245,0)] bg-gradient-to-r from-[rgba(253,255,245,0)] via-[rgba(253,255,245,0.1)] to-[rgba(253,255,245,0)] shadow-[0px_4.474px_16.778px_0px_rgba(0,0,0,0.35)] backdrop-blur-[36.560386657714844px] text-[#FBFAF7] text-[16px]/[22px] md:text-[20px]/[28px] font-[800] hover:bg-white hover:text-black transition-all duration-300">
-                                        Register Here
-                                    </Button>
+                                <motion.div
+                                    whileHover={{
+                                        scale: 1.05,
+                                        transition: { duration: 0.3 }
+                                    }}
+                                    whileTap={{ scale: 0.95 }}
+                                    >
+                                    <a
+                                        href="https://bit.ly/CompanyVisitMnMs"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="w-fit"
+                                    >
+                                        <Button className="cursor-pointer z-10 w-[150px] md:w-[184px] h-[40px] md:h-[44px] rounded-full border-2 border-[rgba(253,255,245,0)] bg-gradient-to-r from-[rgba(253,255,245,0)] via-[rgba(253,255,245,0.1)] to-[rgba(253,255,245,0)] shadow-[0px_4.474px_16.778px_0px_rgba(0,0,0,0.35)] backdrop-blur-[36.560386657714844px] text-[#FBFAF7] text-[18px]/[24px] md:text-[24px]/[31.104px] font-[800] mr-0 md:mr-[20px] hover:bg-white hover:text-black transition-all duration-300">
+                                            Register Here
+                                        </Button>
+                                    </a>
                                 </motion.div>
                                 <motion.div animate={{ y: [0, -12, 0], rotate: [0, 2, -2, 0] }} transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }} className="w-[260px] sm:w-[300px] md:w-[320px]">
                                     <Image
