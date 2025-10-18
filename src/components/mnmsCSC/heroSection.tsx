@@ -157,7 +157,7 @@ const HeroSection = () => {
                                 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.3 }}
-                                href="https://bit.ly/PreliminaryRound20thCSCMnMsWeek"
+                                href="https://forms.gle/wFh1YtgpGQ38mqwv9"
                                 target="_blank"
                             >
                                 {/* Gradient border effect */}
@@ -171,7 +171,7 @@ const HeroSection = () => {
                                 {/* Ripple effect */}
                                 <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-20 group-hover:animate-ping"></div>
 
-                                <span className="relative z-10 transition-colors duration-300">Preliminary Round Paper Submission</span>
+                                <span className="relative z-10 transition-colors duration-300">Semifinal submission</span>
                             </motion.a>
                         </div>
                     </motion.div>
