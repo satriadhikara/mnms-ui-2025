@@ -90,7 +90,7 @@ const EventSection = () => {
       image: "/MNMScv.png",
       buttonText: "Learn More",
       buttonText2: "Register",
-      buttonLink: "/coming-soon",
+      buttonLink: "/company-visit",
       buttonLink2: "/coming-soon",
     },
     {
@@ -108,7 +108,7 @@ const EventSection = () => {
       image: "/MNMSsummit.png",
       buttonText: "Learn More",
       buttonText2: "Register",
-      buttonLink: "/coming-soon",
+      buttonLink: "/summit",
       buttonLink2: "/coming-soon",
     },
   ];

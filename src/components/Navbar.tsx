@@ -101,6 +101,11 @@ const Navbar: React.FC = () => {
             Company Visit
           </Link>
         </li>
+        <li className="flex items-center">
+          <Link href="/summit" className={buttonClass}>
+            Summit
+          </Link>
+        </li>
         <li ref={dropdownRef} className="relative flex items-center">
           <button
             type="button"
