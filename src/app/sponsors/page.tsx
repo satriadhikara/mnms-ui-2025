@@ -11,9 +11,7 @@ import Image from "next/image";
 
 const SponsorsPage = () => {
     const sponsorLogos = [
-        { src: 'logo-mind-id.png', width: 350, height: 105 },
-        { src: 'logo-rgd.png', width: 85, height: 85 },
-        { src: 'logo-harita-nickel.png', width: 160, height: 65 },
+        { src: 'sponsor.png', width: 400, height: 200 },
     ];
 
     return (
@@ -226,11 +224,11 @@ const SponsorsPage = () => {
                     </motion.div>
                     
                     <motion.div 
-                        className="flex flex-wrap justify-start items-start gap-6 md:gap-8 w-full max-w-[1102px] h-auto md:h-[378.775px] p-6 md:p-8
+                        className="relative w-full max-w-[1102px] h-[300px] md:h-[378.775px]
                                     rounded-[25px] md:rounded-[46.086px] border border-[1px] md:border-[1.418px] border-transparent
                                     bg-gradient-to-r from-[rgba(253,255,245,0)] via-[rgba(253,255,245,0.10)] to-[rgba(253,255,245,0)]
                                     shadow-[0_4.25px_15.939px_rgba(0,0,0,0.35),0_4.25px_15.939px_rgba(0,0,0,0.35)]
-                                    backdrop-blur-[20px] md:backdrop-blur-[34.73236846923828px] z-10"
+                                    backdrop-blur-[20px] md:backdrop-blur-[34.73236846923828px] z-10 overflow-hidden"
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
@@ -241,34 +239,25 @@ const SponsorsPage = () => {
                             transition: { duration: 0.3 }
                         }}
                     >
-                        {sponsorLogos.map((logo, index) => (
-                            <motion.div 
-                                key={index} 
-                                className="h-16 md:h-20 flex items-center justify-center p-2"
-                                initial={{ opacity: 0, y: 30, scale: 0.8 }}
-                                whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ 
-                                    duration: 0.6, 
-                                    delay: 0.6 + index * 0.2,
-                                    ease: "easeOut" 
-                                }}
-                                whileHover={{ 
-                                    scale: 1.1,
-                                    y: -5,
-                                    transition: { duration: 0.3 }
-                                }}
-                                whileTap={{ scale: 0.95 }}
-                            >
-                                <Image
-                                    src={`/images/sponsors/${logo.src}`}
-                                    alt={`Sponsor ${index + 1}`}
-                                    width={logo.width}
-                                    height={logo.height}
-                                    className="object-contain max-w-full max-h-full w-auto h-auto"
-                                />
-                            </motion.div>
-                        ))}
+                        <motion.div
+                            className="w-full h-full flex items-center justify-center p-8"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ 
+                                duration: 0.6, 
+                                delay: 0.6,
+                                ease: "easeOut" 
+                            }}
+                        >
+                            <Image
+                                src={`/${sponsorLogos[0].src}`}
+                                alt="Main Sponsor"
+                                width={sponsorLogos[0].width}
+                                height={sponsorLogos[0].height}
+                                className="object-contain w-full h-full"
+                            />
+                        </motion.div>
                     </motion.div>
                     
                     <motion.div 
